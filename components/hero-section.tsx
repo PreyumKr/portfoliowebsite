@@ -36,11 +36,12 @@ export function HeroSection() {
           <div className="flex-shrink-0 flex items-center justify-center">
             {/*
               Mobile  : circle  (w-52 h-52 rounded-full)
-              Desktop : portrait rectangle  (w-56 h-72 rounded-2xl)
-              object-top keeps the face visible in both crops.
-              Tip: change object-top to object-[50%_20%] to fine-tune face position.
+              Tablet  : portrait rectangle  (w-56 h-72 rounded-2xl)
+              Large   : bigger portrait rectangle  (w-64 h-80 rounded-2xl)
+              XL+     : even bigger  (w-72 h-96 rounded-2xl)
+              object-top keeps the face visible in all crops.
             */}
-            <div className="relative w-40 h-40 sm:w-52 sm:h-52 rounded-full md:w-56 md:h-72 md:rounded-2xl overflow-hidden border-4 border-gray-300 dark:border-gray-600 shadow-xl bg-gray-200 dark:bg-gray-800">
+            <div className="relative w-40 h-40 sm:w-52 sm:h-52 rounded-full md:w-56 md:h-72 lg:w-64 lg:h-80 xl:w-72 xl:h-96 md:rounded-2xl overflow-hidden border-4 border-gray-300 dark:border-gray-600 shadow-xl bg-gray-200 dark:bg-gray-800">
               {/* Replace the src below with your actual photo path, e.g. "/profile.jpg" */}
               <img
                 src="/profile.png"
