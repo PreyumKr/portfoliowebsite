@@ -4,37 +4,14 @@ export const projects = [
     title: "Portfolio Website",
     description: "A modern portfolio website built with Next.js and TypeScript showcasing my projects and skills.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    link: "https://github.com",
-    date: "2024-03-15",
+    link: "https://preyumkrportfolio.netlify.app/",
+    codelink: "https://github.com/PreyumKr/portfoliowebsite",
+    date: "2024-03-19",
     images: [
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1633356360985-cacdc5adac21?w=500&h=300&fit=crop",
+      "/project1/1.png",
+      "/project1/2.png",
     ],
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description: "A full-stack task management application with real-time updates and user authentication.",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-    link: "https://github.com",
-    date: "2024-02-20",
-    images: [
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-    ],
-  },
-  {
-    id: 3,
-    title: "E-commerce Platform",
-    description: "A scalable e-commerce platform with payment integration and admin dashboard.",
-    technologies: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
-    link: "https://github.com",
-    date: "2024-01-10",
-    images: [
-      "https://images.unsplash.com/photo-1460925895917-afd651dcb3a3?w=500&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1633356360985-cacdc5adac21?w=500&h=300&fit=crop",
-    ],
-  },
+  }
 ]
 
 export const skills = [

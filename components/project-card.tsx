@@ -1,8 +1,8 @@
 "use client"
 
-import { ExternalLink, Github } from "lucide-react"
-import Image from "next/image"
+import { ExternalLink } from "lucide-react"
 import { useState, useEffect } from "react"
+import { FaGithub } from "react-icons/fa"
 
 interface ProjectCardProps {
   project: {
@@ -11,6 +11,7 @@ interface ProjectCardProps {
     description: string
     technologies: string[]
     link: string
+    codelink: string
     images: string[]
   }
 }
@@ -32,10 +33,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
     return () => clearInterval(interval)
   }, [project.images.length])
 
-  const currentImage = project.images[currentImageIndex]
-
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+    <div className="bg-gray-50 dark:bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
       <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700 group">
         {/* Image carousel container */}
         <div
@@ -43,12 +42,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
         >
           {project.images.map((image, index) => (
-            <div key={index} className="w-full h-full flex-shrink-0">
-              <Image
+            <div key={index} className="w-full h-full flex-shrink-0 relative">
+              <img
                 src={image}
                 alt={`${project.title} - Image ${index + 1}`}
-                fill
-                className="object-cover group-hover:scale-105 transition-all duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
               />
             </div>
           ))}
@@ -90,10 +88,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
             Demo
           </a>
           <a
-            href={project.link}
+            href={project.codelink}
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 font-medium text-sm"
           >
-            <Github className="w-4 h-4" />
+            <FaGithub className="w-4 h-4" />
             Code
           </a>
         </div>
