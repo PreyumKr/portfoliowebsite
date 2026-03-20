@@ -18,6 +18,12 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [disableTransition, setDisableTransition] = useState(false)
+
+  // Duplicate the first image at the end for seamless looping
+  const loopImages = project.images.length > 1 
+    ? [...project.images, project.images[0]]
+    : project.images
 
   useEffect(() => {
     // Only cycle if there are multiple images
@@ -27,21 +33,44 @@ export function ProjectCard({ project }: ProjectCardProps) {
     const randomDelay = Math.random() * 2000 + 3000
 
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % project.images.length)
+      setCurrentImageIndex((prev) => {
+        const nextIndex = prev + 1
+
+        // When we reach the duplicate image at the end
+        if (nextIndex >= loopImages.length) {
+          // Disable transition for instant reset
+          setDisableTransition(true)
+          // Reset to 0 after a tiny delay (allows current frame to render)
+          setTimeout(() => {
+            setCurrentImageIndex(0)
+            setDisableTransition(false)
+          }, 10)
+          // Return nextIndex so transition is disabled
+          return nextIndex
+        }
+
+        return nextIndex
+      })
     }, randomDelay)
 
     return () => clearInterval(interval)
   }, [project.images.length])
+
+  const carouselStyle: React.CSSProperties = {
+    // Use modulo to handle the overflow gracefully
+    transform: `translateX(-${(currentImageIndex % loopImages.length) * 100}%)`,
+    transition: disableTransition ? 'none' : 'transform 700ms ease-in-out',
+  }
 
   return (
     <div className="bg-gray-50 dark:bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col">
       <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700 group">
         {/* Image carousel container */}
         <div
-          className="flex h-full transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+          className="flex h-full"
+          style={carouselStyle}
         >
-          {project.images.map((image, index) => (
+          {loopImages.map((image, index) => (
             <div key={index} className="w-full h-full flex-shrink-0 relative">
               <img
                 src={image}
@@ -59,7 +88,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <div
                 key={index}
                 className={`h-2 w-2 rounded-full transition-all ${
-                  index === currentImageIndex ? "bg-white w-6" : "bg-white/50"
+                  index === (currentImageIndex % project.images.length) ? "bg-white w-6" : "bg-white/50"
                 }`}
               />
             ))}
