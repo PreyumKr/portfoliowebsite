@@ -10,7 +10,24 @@ export const projects = [
     images: [
       "/project1/1.png",
       "/project1/2.png",
+    ]
+  },
+  {
+    id: 2,
+    title: "Resume Screening Model",
+    description: "Resume Screener using TF‑IDF to filter candidate resumes. The app extracts their text, preprocesses, vectorizes and compares them to role-specific keyword profiles, The project includes model training and serialization. FastAPI and Kubernetes/Docker are provided for deployment as well.",
+    technologies: [
+      "Python", "scikit-learn", "FastAPI", "Streamlit", "Docker", "Kubernetes"
     ],
+    link: "https://resumescreenerbasic.streamlit.app/",
+    codelink: "https://github.com/preyumkr/resume_screener_basic",
+    date: "2024-02-10",
+    images: [
+      "/project2/1.png",
+      "/project2/2.png",
+      "/project2/3.png",
+      "/project2/4.png",
+    ]
   }
 ]
 

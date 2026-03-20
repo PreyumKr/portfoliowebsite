@@ -34,7 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   }, [project.images.length])
 
   return (
-    <div className="bg-gray-50 dark:bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+    <div className="bg-gray-50 dark:bg-black rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col">
       <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700 group">
         {/* Image carousel container */}
         <div
@@ -46,7 +46,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <img
                 src={image}
                 alt={`${project.title} - Image ${index + 1}`}
-                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                className="w-full h-full object-fill group-hover:scale-105 transition-all duration-500"
               />
             </div>
           ))}
@@ -66,7 +66,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
         )}
       </div>
-      <div className="p-6 space-y-4">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{project.description}</p>
         <div className="flex flex-wrap gap-2">
@@ -79,7 +79,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </span>
           ))}
         </div>
-        <div className="flex gap-4 pt-4">
+        <div className="flex gap-4 mt-auto pt-4">
           <a
             href={project.link}
             className="inline-flex items-center gap-2 text-gray-800 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 font-medium text-sm"
