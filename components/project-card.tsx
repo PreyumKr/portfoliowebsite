@@ -68,12 +68,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
       <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
-        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{project.description}</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-3">{project.description}</p>
+        <div className="flex flex-wrap gap-1">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium"
+              className="px-2 py-0.5 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium"
             >
               {tech}
             </span>

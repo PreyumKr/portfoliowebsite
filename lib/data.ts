@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Portfolio Website",
-    description: "A modern portfolio website built with Next.js and TypeScript showcasing my projects and skills.",
+    description: "Modern, responsive portfolio built with Next.js (App Router) and TypeScript. Showcases projects, skills, blogs, and contact information. Includes a dark/light theme toggle (next-themes), responsive layouts with Tailwind CSS, project cards with cycling image galleries, and a dedicated projects page. Live demo and source code are linked.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     link: "https://preyumkrportfolio.netlify.app/",
     codelink: "https://github.com/PreyumKr/portfoliowebsite",
@@ -17,7 +17,7 @@ export const projects = [
     title: "Resume Screening Model",
     description: "Resume Screener using TF‑IDF to filter candidate resumes. The app extracts their text, preprocesses, vectorizes and compares them to role-specific keyword profiles, The project includes model training and serialization. FastAPI and Kubernetes/Docker are provided for deployment as well.",
     technologies: [
-      "Python", "scikit-learn", "FastAPI", "Streamlit", "Docker", "Kubernetes"
+      "Python", "scikit-learn", "FastAPI", "Docker", "Streamlit", "Kubernetes", "RapidOCR"
     ],
     link: "https://resumescreenerbasic.streamlit.app/",
     codelink: "https://github.com/preyumkr/resume_screener_basic",
