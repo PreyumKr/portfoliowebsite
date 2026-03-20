@@ -42,7 +42,7 @@ export const skills = [
   { category: "ML & AI", items: ["TensorFlow", "PyTorch", "Scikit-learn", "Hugging Face", "Transformers", "OpenCV", "Ollama"] },
   { category: "Tools", items: ["Git", "Docker", "VS Code", "Vercel", "GitHub", "MLFlow", "Netlify"] },
   { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"] },
-  { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Firebase"] },,
+  { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Firebase"] },
   { category: "Others", items: ["REST APIs", "GraphQL", "WebSockets", "Agile", "Problem Solving"] },
 ]
 
