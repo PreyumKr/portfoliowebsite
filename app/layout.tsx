@@ -14,17 +14,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name | Full Stack Developer",
+  title: "Preyum Kumar | Full Stack AI Engineer",
   description: "Portfolio website showcasing my projects, skills, and experience as a full stack developer.",
-  keywords: ["portfolio", "developer", "full stack", "projects", "TypeScript", "Next.js"],
-  authors: [{ name: "Your Name" }],
+  keywords: ["portfolio", "developer", "full stack", "AI", "AI Engineer", "ML", "ML Engineer", "projects", "TypeScript", "Next.js"],
+  authors: [{ name: "Preyum Kumar" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yourportfolio.com",
-    title: "Your Name | Full Stack Developer",
+    title: "Preyum Kumar | Full Stack AI Engineer",
     description: "Portfolio website showcasing my projects, skills, and experience.",
-    siteName: "Your Portfolio",
+    siteName: "My Portfolio",
   },
 };
 

@@ -6,7 +6,7 @@ export const projects = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     link: "https://preyumkrportfolio.netlify.app/",
     codelink: "https://github.com/PreyumKr/portfoliowebsite",
-    date: "2024-03-19",
+    date: "2026-03-19",
     images: [
       "/project1/1.png",
       "/project1/2.png",
@@ -21,12 +21,41 @@ export const projects = [
     ],
     link: "https://resumescreenerbasic.streamlit.app/",
     codelink: "https://github.com/preyumkr/resume_screener_basic",
-    date: "2024-02-10",
+    date: "2026-02-10",
     images: [
       "/project2/1.png",
       "/project2/2.png",
       "/project2/3.png",
       "/project2/4.png",
+    ]
+  },
+  {
+    id: 3,
+    title: "Vehicle Insurance Claim Prediction",
+    description: "Predictive model for estimating vehicle insurance claims using machine learning techniques.",
+    technologies: ["Python", "scikit-learn", "Pandas", "NumPy"],
+    link: "https://vehicleinsuranceclaimprediction.streamlit.app/",
+    codelink: "https://github.com/preyumkr/vehicle_insurance_claim_prediction",
+    date: "2026-01-20",
+    images: [
+      "/project3/1.png",
+      "/project3/2.png",
+      "/project3/3.png",
+    ]
+  },
+  {
+    id: 4,
+    title: "QR Code Designer",
+    description: "A beautiful, full-featured QR code designer built with Next.js and qr-code-styling. Generate, customize, and export designer QR codes with preset themes, advanced styling (dot & corner styles, colors, error correction), and multiple export options (PNG, SVG, JPEG, clipboard).",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "qr-code-styling"],
+    link: "",
+    codelink: "",
+    date: "2026-03-20",
+    images: [
+      "/project4/1.png",
+      "/project4/2.png",
+      "/project4/3.png",
+      "/project4/4.png",
     ]
   }
 ]

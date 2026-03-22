@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
-import { Menu, X, Code, Sun, Moon } from "lucide-react"
+import { Menu, X, Code, Sun, Moon, CpuIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function Navbar() {
@@ -37,7 +37,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 font-bold text-xl">
-            <Code className="w-6 h-6" />
+            <CpuIcon className="w-6 h-6" />
             <span>Portfolio</span>
           </Link>
 

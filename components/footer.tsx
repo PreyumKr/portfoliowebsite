@@ -31,10 +31,10 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Resources</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Resume</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+              {/* <li><a href="#blog" className="hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#resume" className="hover:text-white transition-colors">Resume</a></li> */}
+              <li><a href="#home" className="hover:text-white transition-colors">Portfolio</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
