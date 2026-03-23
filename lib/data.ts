@@ -21,7 +21,7 @@ export const projects = [
     ],
     link: "https://resumescreenerbasic.streamlit.app/",
     codelink: "https://github.com/preyumkr/resume_screener_basic",
-    date: "2026-02-10",
+    date: "2025-02-11",
     images: [
       "/project2/1.png",
       "/project2/2.png",
@@ -36,11 +36,10 @@ export const projects = [
     technologies: ["Python", "scikit-learn", "Pandas", "NumPy"],
     link: "https://vehicleinsuranceclaimprediction.streamlit.app/",
     codelink: "https://github.com/preyumkr/vehicle_insurance_claim_prediction",
-    date: "2026-01-20",
+    date: "2026-02-23",
     images: [
       "/project3/1.png",
       "/project3/2.png",
-      "/project3/3.png",
     ]
   },
   {
@@ -48,8 +47,8 @@ export const projects = [
     title: "QR Code Designer",
     description: "A beautiful, full-featured QR code designer built with Next.js and qr-code-styling. Generate, customize, and export designer QR codes with preset themes, advanced styling (dot & corner styles, colors, error correction), and multiple export options (PNG, SVG, JPEG, clipboard).",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "qr-code-styling"],
-    link: "",
-    codelink: "",
+    link: "https://designedqrgenerator.netlify.app/",
+    codelink: "https://github.com/PreyumKr/qr-generator",
     date: "2026-03-20",
     images: [
       "/project4/1.png",
@@ -72,26 +71,11 @@ export const skills = [
 export const blogs = [
   {
     id: 1,
-    title: "Getting Started with Next.js 13+",
-    description: "Learn the fundamentals of Next.js 13 with the new App Router and Server Components.",
-    date: "2024-01-15",
-    readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1633356360985-cacdc5adac21?w=500&h=300&fit=crop",
-  },
-  {
-    id: 2,
-    title: "TypeScript Best Practices",
-    description: "Master TypeScript with these essential tips and tricks for production-ready code.",
-    date: "2024-01-10",
-    readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-  },
-  {
-    id: 3,
-    title: "Building Responsive Designs with Tailwind CSS",
-    description: "Create beautiful, responsive layouts using utility-first CSS with Tailwind.",
-    date: "2024-01-05",
-    readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1633356360985-cacdc5adac21?w=500&h=300&fit=crop",
-  },
+    title: "Modern JavaScript Essentials: From Basics to Asynchronous Programming",
+    description: "In an AI-driven world, a strong foundation in core technologies is essential. To keep my skills sharp, I'm starting a regular blog series covering the tech stack I use. Welcome to the first post in my Next.js journey, where we'll start by mastering the JavaScript fundamentals.",
+    date: "2026-03-23",
+    readTime: "35 min read",
+    image: "/blog1/1.png",
+    link: "https://dev.to/preyumkr/modern-javascript-essentials-from-basics-to-asynchronous-programming-3fgo"
+  }
 ]

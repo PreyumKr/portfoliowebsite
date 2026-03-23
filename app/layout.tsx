@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://yourportfolio.com",
     title: "Preyum Kumar | Full Stack AI Engineer",
     description: "Portfolio website showcasing my projects, skills, and experience.",
-    siteName: "My Portfolio",
+    siteName: "Preyum's Portfolio",
   },
 };
 

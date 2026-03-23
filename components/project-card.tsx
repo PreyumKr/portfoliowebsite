@@ -110,14 +110,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <div className="flex gap-4 mt-auto pt-4">
           <a
-            href={project.link}
+            href={project.link} target="_blank"
             className="inline-flex items-center gap-2 text-gray-800 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 font-medium text-sm"
           >
             <ExternalLink className="w-4 h-4" />
             Demo
           </a>
           <a
-            href={project.codelink}
+            href={project.codelink} target="_blank"
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 font-medium text-sm"
           >
             <FaGithub className="w-4 h-4" />

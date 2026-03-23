@@ -9,18 +9,19 @@ interface BlogCardProps {
     date: string
     readTime: string
     image: string
+    link: string
   }
 }
 
 export function BlogCard({ blog }: BlogCardProps) {
   return (
     <div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col">
-      <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
+      <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700 group">
         <Image
           src={blog.image}
           alt={blog.title}
           fill
-          className="object-cover hover:scale-105 transition-transform duration-300"
+          className="object-fill group-hover:scale-105 transition-all duration-500"
         />
       </div>
       <div className="p-6 space-y-4 flex-1 flex flex-col">
@@ -39,7 +40,7 @@ export function BlogCard({ blog }: BlogCardProps) {
           </div>
         </div>
         <a
-          href="#"
+          href={blog.link} target="_blank"
           className="inline-flex items-center gap-2 text-gray-800 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 font-medium text-sm pt-4"
         >
           Read More
