@@ -34,8 +34,8 @@ export const projects = [
     title: "Vehicle Insurance Claim Prediction",
     description: "Predictive model for estimating vehicle insurance claims using machine learning techniques.",
     technologies: ["Python", "scikit-learn", "Pandas", "NumPy"],
-    link: "https://vehicleinsuranceclaimprediction.streamlit.app/",
-    codelink: "https://github.com/preyumkr/vehicle_insurance_claim_prediction",
+    link: "https://vehicle-insurance-checker.onrender.com",
+    codelink: "https://github.com/PreyumKr/MLOps_Project1",
     date: "2026-02-23",
     images: [
       "/project3/1.png",
@@ -74,7 +74,7 @@ export const blogs = [
     title: "Modern JavaScript Essentials: From Basics to Asynchronous Programming",
     description: "In an AI-driven world, a strong foundation in core technologies is essential. To keep my skills sharp, I'm starting a regular blog series covering the tech stack I use. Welcome to the first post in my Next.js journey, where we'll start by mastering the JavaScript fundamentals.",
     date: "2026-03-23",
-    readTime: "35 min read",
+    readTime: "45 min read",
     image: "/blog1/1.png",
     link: "https://dev.to/preyumkr/modern-javascript-essentials-from-basics-to-asynchronous-programming-3fgo"
   }
