@@ -74,8 +74,17 @@ export const blogs = [
     title: "Modern JavaScript Essentials: From Basics to Asynchronous Programming",
     description: "In an AI-driven world, a strong foundation in core technologies is essential. To keep my skills sharp, I'm starting a regular blog series covering the tech stack I use. Welcome to the first post in my Next.js journey, where we'll start by mastering the JavaScript fundamentals.",
     date: "2026-03-23",
-    readTime: "45 min read",
+    readTime: "32 min read",
     image: "/blog1/1.png",
     link: "https://dev.to/preyumkr/modern-javascript-essentials-from-basics-to-asynchronous-programming-3fgo"
+  },
+  {
+    id: 2,
+    title: "Modern React Essentials: From Component Architecture to Advanced Hooks",
+    description: "In an AI-driven world, we should keep our basics clear at all times. This is the second post in my next.js learning series where we will learn about React as it's a fundamental part of Next.js. In the future, I may also add an optional HTML & CSS post, but since I'm already familiar with their fundamentals, I'm not creating one just now.",
+    date: "2026-04-09",
+    readTime: "19 min read",
+    image: "/blog2/1.png",
+    link: "https://dev.to/preyumkr/modern-react-essentials-from-component-architecture-to-advanced-hooks-2bj0"
   }
 ]
