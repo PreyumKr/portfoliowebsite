@@ -1,5 +1,6 @@
 import { blogs } from "@/lib/data"
 import { BlogCard } from "./blog-card"
+import Link from "next/link"
 
 export function BlogsSection() {
   return (
@@ -18,12 +19,12 @@ export function BlogsSection() {
           </div>
 
           <div className="text-center pt-8">
-            <a
-              href="#"
+            <Link
+              href="/articles"
               className="inline-block px-8 py-3 border-2 border-gray-800 text-gray-800 dark:border-gray-400 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors font-semibold"
             >
               Read All Articles
-            </a>
+            </Link>
           </div>
         </div>
       </div>

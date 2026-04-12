@@ -1,5 +1,6 @@
 import { projects } from "@/lib/data"
 import { ProjectCard } from "./project-card"
+import Link from "next/link"
 
 export function ProjectsSection() {
   // Sort by date (newest first) and get top 3
@@ -23,12 +24,12 @@ export function ProjectsSection() {
           </div>
 
           <div className="text-center pt-8">
-            <a
+            <Link
               href="/projects"
               className="inline-block px-8 py-3 border-2 border-gray-800 text-gray-800 dark:border-gray-400 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors font-semibold"
             >
               View All Projects
-            </a>
+            </Link>
           </div>
         </div>
       </div>
