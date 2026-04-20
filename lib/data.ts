@@ -83,8 +83,17 @@ export const blogs = [
     title: "Modern React Essentials: From Component Architecture to Advanced Hooks",
     description: "In an AI-driven world, we should keep our basics clear at all times. This is the second post in my next.js learning series where we will learn about React as it's a fundamental part of Next.js. In the future, I may also add an optional HTML & CSS post, but since I'm already familiar with their fundamentals, I'm not creating one just now.",
     date: "2026-04-09",
-    readTime: "19 min read",
+    readTime: "20 min read",
     image: "/blog2/1.png",
     link: "https://dev.to/preyumkr/modern-react-essentials-from-component-architecture-to-advanced-hooks-2bj0"
+  },
+  {
+    id: 3,
+    title: "Modern Next.js Essentials: Building Scalable Full-Stack Applications",
+    description: "In an AI-driven world, we should keep our basics sharp at all times. This is the final post in my next.js learning series where we'll go over the fundamentals of Next.js.",
+    date: "2026-04-16",
+    readTime: "33 min read",
+    image: "/blog3/1.png",
+    link: "https://dev.to/preyumkr/modern-nextjs-essentials-building-scalable-full-stack-applications-2l0f"
   }
 ]
