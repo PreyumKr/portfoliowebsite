@@ -95,5 +95,14 @@ export const blogs = [
     readTime: "33 min read",
     image: "/blog3/1.png",
     link: "https://dev.to/preyumkr/modern-nextjs-essentials-building-scalable-full-stack-applications-2l0f"
+  },
+  {
+  id: 4,
+  title: "Mastering DVC and MLflow for MLOps: A Practical Guide",
+  description: "In this AI-driven world, managing experiments and data versions is just as important as the model architecture itself. This guide covers the essentials of Data Version Control (DVC) and MLflow, the industry-standard tools for reproducible machine learning.",
+  date: "2026-04-21",
+  readTime: "6 min read",
+  image: "/blog4/1.png",
+  link: "https://dev.to/preyumkr/mastering-dvc-and-mlflow-for-mlops-a-practical-guide-2l3e"
   }
 ]
