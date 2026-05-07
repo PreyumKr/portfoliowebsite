@@ -56,6 +56,21 @@ export const projects = [
       "/project4/3.png",
       "/project4/4.png",
     ]
+  },
+  {
+    id: 5,
+    title: "Email Spam Classifier",
+    description: "A machine learning model to classify emails' or sms' text as spam or not spam (i.e ham).",
+    technologies: ["Python", "scikit-learn", "Pandas", "NumPy"],
+    link: "https://emailnsmsspamclassifier.streamlit.app/",
+    codelink: "https://github.com/PreyumKr/Email_Spam_Classifier",
+    date: "2026-05-05",
+    images: [
+      "/project5/1.png",
+      "/project5/2.png",
+      "/project5/3.png",
+      "/project5/4.png",
+    ]
   }
 ]
 
