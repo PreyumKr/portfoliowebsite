@@ -119,5 +119,14 @@ export const blogs = [
   readTime: "6 min read",
   image: "/blog4/1.png",
   link: "https://dev.to/preyumkr/mastering-dvc-and-mlflow-for-mlops-a-practical-guide-2l3e"
+  },
+  {
+  id: 5,
+  title: "Understanding REST APIs",
+  description: "REST (Representational State Transfer) is the architectural standard for modern web services. This guide explains what APIs are, the specific rules of REST, and how to implement them using FastAPI.",
+  date: "2026-05-19",
+  readTime: "6 min read",
+  image: "/blog5/1.png",
+  link: "https://dev.to/preyumkr/understanding-rest-apis-4ngp"
   }
 ]
