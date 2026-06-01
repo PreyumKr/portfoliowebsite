@@ -71,13 +71,30 @@ export const projects = [
       "/project5/3.png",
       "/project5/4.png",
     ]
+  },
+  {
+    id: 6,
+    title: "Review Sentiment Analysis",
+    description: "A web-based sentiment analysis application using VADER and RoBERTa models built with Streamlit.",
+    technologies: ["Python", "transformers", "Pandas", "NumPy", "Streamlit", "nltk"],
+    link: "https://sentimentanalyser-pk.streamlit.app/",
+    codelink: "https://github.com/PreyumKr/Sentiment_Analyser",
+    date: "2026-05-31",
+    images: [
+      "/project6/1.png",
+      "/project6/2.png",
+      "/project6/3.png",
+      "/project6/4.png",
+      "/project6/5.png",
+      "/project6/6.png",
+    ]
   }
 ]
 
 export const skills = [
-  { category: "Programming", items: ["Python", "C++", "Go", "Java"] },
+  { category: "Programming", items: ["Python", "C++", "Go"] },
   { category: "ML & AI", items: ["TensorFlow", "PyTorch", "Scikit-learn", "Hugging Face", "Transformers", "OpenCV", "Ollama"] },
-  { category: "Tools", items: ["Git", "Docker", "VS Code", "Vercel", "GitHub", "MLFlow", "Netlify"] },
+  { category: "Tools", items: ["Git", "Docker", "VS Code", "GitHub", "MLFlow", "Netlify"] },
   { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"] },
   { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Firebase"] },
   { category: "Others", items: ["REST APIs", "GraphQL", "WebSockets", "Agile", "Problem Solving"] },
@@ -128,5 +145,14 @@ export const blogs = [
   readTime: "6 min read",
   image: "/blog5/1.png",
   link: "https://dev.to/preyumkr/understanding-rest-apis-4ngp"
+  },
+  {
+  id: 6,
+  title: "Lexicon vs. Transformers: A Complete Guide to Sentiment Analysis with VADER and RoBERTa",
+  description: "This comprehensive guide details a complete sentiment analysis workflow comparing a lexicon-based bag-of-words approach (VADER) and a deep learning transformer-based approach (RoBERTa), concluding with an interactive Streamlit dashboard for live model testing.",
+  date: "2026-06-02",
+  readTime: "11 min read",
+  image: "/blog6/1.png",
+  link: "https://dev.to/preyumkr/lexicon-vs-transformers-a-complete-guide-to-sentiment-analysis-with-vader-and-roberta-451f"
   }
 ]
