@@ -3,6 +3,11 @@ import { BlogCard } from "./blog-card"
 import Link from "next/link"
 
 export function BlogsSection() {
+  // Sort by date (newest first) and get top 3
+  const topBlogs = [...blogs]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3)
+
   return (
     <section id="blogs" className="py-16 sm:py-24 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +18,7 @@ export function BlogsSection() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogs.map((blog) => (
+            {topBlogs.map((blog) => (
               <BlogCard key={blog.id} blog={blog} />
             ))}
           </div>
