@@ -60,8 +60,8 @@ export const projects = [
   {
     id: 5,
     title: "Email Spam Classifier",
-    description: "A machine learning model to classify emails' or sms' text as spam or not spam (i.e ham).",
-    technologies: ["Python", "scikit-learn", "Pandas", "NumPy"],
+    description: "A machine learning model to classify emails' or sms' text as spam or not spam (i.e ham). Using Naive Bayes algorithm and Pre-trained RoBERTa transformer model from Hugging Face.",
+    technologies: ["Python", "scikit-learn", "Pandas", "NumPy", "transformers", "Streamlit"],
     link: "https://emailnsmsspamclassifier.streamlit.app/",
     codelink: "https://github.com/PreyumKr/Email_Spam_Classifier",
     date: "2026-05-05",
