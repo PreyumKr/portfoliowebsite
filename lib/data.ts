@@ -154,5 +154,14 @@ export const blogs = [
   readTime: "11 min read",
   image: "/blog6/1.png",
   link: "https://dev.to/preyumkr/lexicon-vs-transformers-a-complete-guide-to-sentiment-analysis-with-vader-and-roberta-451f"
+  },
+  {
+  id: 7,
+  title: "Email Spam Classifier with Streamlit and Docker",
+  description: "This guide details an end-to-end Machine Learning pipeline for email spam classification, covering text preprocessing, comparative evaluations between Naive Bayes and fine-tuned RoBERTa models, interactive visualization with Streamlit, and deployment using Docker.",
+  date: "2026-06-04",
+  readTime: "9 min read",
+  image: "/blog7/1.png",
+  link: "https://dev.to/preyumkr/email-spam-classifier-with-streamlit-and-docker-1l8i"
   }
 ]
